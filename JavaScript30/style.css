@@ -1,8 +1,55 @@
+body {
+    margin: 0 0 0 0;
+    display: block;
+    background-image: url("yvette-de-wit-unsplash.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center center;
+}
+
 .wrapper {
-    background-image: ;
+    display: flex;
 }
 
 .main-container {
+    margin-top: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drum-list-container {
+
+}
+
+.drum-list {
     display: flex;
-    width: 80vw;
+    flex-direction: row;
+    align-items: center;
+}
+
+.drum-list-item {
+    padding: 1.2em;
+    display: inline-block;
+    width: 3em;
+    flex-direction: column;
+    text-align: center;
+    border: 0.1em solid purple;
+    margin: 0.6em;
+    transition: all 2s;
+    color: white;
+    background: rgba (0, 0, 0, 0.4)
+}
+
+key {
+    color: whitesmoke;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: yellow;
 }

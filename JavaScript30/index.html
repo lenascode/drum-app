@@ -1,22 +1,38 @@
 <!DOCTYPE html>
     <head>
-        <body>
-            <container class="wrapper">
-                <container class="main-container">
-                    <container class="drum-list-container">
-                        <li class="drum-list">
-                            <ul>a<span>clap</span></ul>
-                            <ul>s<span>hihat</span></ul>
-                            <ul>d<span>kick</span></ul>
-                            <ul>f<span>openhat</span></ul>
-                            <ul>g<span>boom</span></ul>
-                            <ul>h<span>ride</span></ul>
-                            <ul>j<span>snare</span></ul>
-                            <ul>k<span>tom</span></ul>
-                            <ul>l<span>tink</span></ul>
-                        </li>
-                    </container>
+        <link rel="stylesheet" href="style.css">
+         
+    </head>
+    <body>
+        <container class="wrapper">
+            <container class="main-container">
+                <container class="drum-list-container">
+                    <ul class="drum-list">
+                        <ul class="drum-list-item" data-key="a"><key>a</key><span>clap</span></ul>
+                        <ul class="drum-list-item" data-key="s"><key>s</key><span>hihat</span></ul>
+                        <ul class="drum-list-item" data-key="d"><key>d</key><span>kick</span></ul>
+                        <ul class="drum-list-item" data-key="f"><key>f</key><span>openhat</span></ul>
+                        <ul class="drum-list-item" data-key="g"><key>g</key><span>boom</span></ul>
+                        <ul class="drum-list-item" data-key="h"><key>h</key><span>ride</span></ul>
+                        <ul class="drum-list-item" data-key="j"><key>j</key><span>snare</span></ul>
+                        <ul class="drum-list-item" data-key="k"><key>k</key><span>tom</span></ul>
+                        <ul class="drum-list-item" data-key="l"><key>l</key><span>tink</span></ul>
+                    </ul>
                 </container>
             </container>
-        </body>
-    </head>
+        </container>
+
+        <audio data-key="a" src="sounds/drum-clap.wav"></audio> 
+        <audio data-key="s" src="melody.mp3"></audio> 
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+
+
+
+<!-- Write your comments here 
+    <input type="text" id="type-here" onkeyup="doSomething(event)">
+
+    "a"
+    keypress
+    KeyboardEvent.key
+-->
